@@ -31,6 +31,10 @@ require(chron)
 # make.OMR function returns an n.year x n.month matrix of mean OMR
 # make.WQ function returns n.year x n.month x n.strata matrices of mean observed Temp and Secchi 
 
+# SET Wd to data raw so it can find all the files
+setwd("data-raw")
+
+
 ### OMR ###
 # Load daily OMR file
 OMR_daily<-read.table('OMR_daily.txt',header=T)
