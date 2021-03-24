@@ -33,3 +33,10 @@ Delta smelt densities in the South Delta stratum were depleted by entrainment, r
 The water temperatures that would have been simulated by DSM2 for missing years, 2011-2014, were predicted using a general linear model of DSM2 monthly means as a function of season, spatial strata, and monthly mean temperatures measured by fish monitoring programs . The best model of was identified using backwards selection, starting with a full model, having an effect for each stratum and season, and eliminating non-significant spatial effects (acceptance level \&lt; 0.05), one coefficient at a time, before eliminating non-significant seasonal effects. The model was fit to data from years 1990-2010, and used to predict from measured for years 2011-2014. See Appendix B for details of the model to predict .
 
 **Secchi depth.** Secchi depth data were used as an index of turbidity. Like , Secchi depths for years 1959-2020 were summarized from all CDFW and FWS databases available online (Fig. 2). Means for each year-month-stratum combination were summarized, but data were not available for all strata in all year-months. Missing data were estimated from general linear models of the remaining Secchi data in other spatial strata. The best general linear model for each stratum was selected using backwards selection, beginning with the full model, having a separate coefficient for each spatial stratum, and eliminating non-significant coefficients, one at a time.
+
+# R Scripts
+`Delta smelt data functions.R` contains the functions required to prep data from the raw format described above for use in the Delta Smelt Life Cycle Model. 
+
+TODO Fix the factors that currenrly wont run in script and then describe how to use script to get final data, decide if I want to store that final data somewhere
+
+# Model Results 
