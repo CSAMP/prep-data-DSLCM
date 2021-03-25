@@ -37,7 +37,7 @@ The water temperatures that would have been simulated by DSM2 for missing years,
 
 For more information on _Secchi_ and _Temperature_ data see the [`delta-secchi-temperature-repository.`](https://github.com/CSAMP/delta-secchi-temperature-data)  
 
-## R Scripts
+## R Script
 `Delta smelt data functions.R` contains the functions required to prep data from the raw format described above for use in the Delta Smelt Life Cycle Model. 
 
 `Delta smelt data functions.R` is broken up into sections. Each section reads in a particular type of data, summarizes into year-month-strata means, and ends with a function to return processed data for IBMR.
