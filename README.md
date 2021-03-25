@@ -27,7 +27,7 @@ Filenames for datasets with raw data are listed below. Each dataset, except fish
 
 Surveys were not completed in all months, and in some months, no fish were observed (mostly February, March, and August). Distributions from the prior month were assumed when observations were missing. A high level of zero-inflation, resulting in zero observed occupancy of many spatial strata, was noted beginning in spring of 2015; therefore, the terminal cohort of observed spatial distributions was 2014 (last observed in April 2015).
 
-Delta smelt densities in the South Delta stratum were depleted by entrainment, resulting in a negative bias and underestimation of the proportion of the population in this region of the Delta. Observed South Delta densities were therefore divided by estimates of proportional entrainment loss (Smith et al. 2021) to correct for bias.
+Delta smelt densities in the South Delta stratum were depleted by entrainment, resulting in a negative bias and underestimation of the proportion of the population in this region of the Delta. Observed South Delta densities were therefore divided by estimates of proportional entrainment loss, `PEL_DSLCM.txt` (Smith et al. 2021) to correct for bias.
 
 **Temperature.** Water temperature data _Temp_<sub>yms</sub> for years 1990-2010 were summarized from DSM2 hydrodynamic simulations by Derek Hilts (Fig. 2). The terminal year of the DSM2 _Temp_ dataset, 2010, limited the number of years available for the delta smelt model by at least 4 years. A second set of water temperature data was therefore summarized from all available online data collected by the [CDFW](https://nrm.dfg.ca.gov/) and [FWS](https://www.fws.gov/lodi/) during Delta fish monitoring programs. The second water temperature dataset spanned years 1959-2020, but prior to 2011, data for some year-month-strata combinations were missing or sparse, with only a single sample.
 
@@ -40,6 +40,9 @@ For more information on _Secchi_ and _Temperature_ data see the [`delta-secchi-t
 ## R Scripts
 `Delta smelt data functions.R` contains the functions required to prep data from the raw format described above for use in the Delta Smelt Life Cycle Model. 
 
-TODO Fix the factors that currently wont run in script and then describe how to use script to get final data, decide if I want to store that final data somewhere
+`Delta smelt data functions.R` is broken up into sections. Each section reads in a particular type of data, summarizes into year-month-strata means, and ends with a function to return processed data for IBMR.
+
+
+
 
 
