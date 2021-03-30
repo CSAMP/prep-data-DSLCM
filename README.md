@@ -1,6 +1,6 @@
 # Data Prep for A Delta Smelt Individual-Based Life Cycle Model
 
-This repository contains the raw data and code to prep data for use in the Delta Smelt Life Cycle Model 
+This repository contains the raw data and code to prep data for use in the Delta Smelt Life Cycle Model. Text is by Will Smith. 
 
 ## Data Overview
 Five physical and biological variables, representing observed Delta conditions during 1995-2014, drive simulated population dynamics: prey density, Old and Middle River flow, delta smelt distribution, water temperature, and Secchi depth. All variables except Old and Middle River flow had dimensions year _y_, month _m_, and spatial strata _s_. Old and Middle River flow was a _y_ x _m_ matrix, and prey densities included a fourth dimension _p_ indexing prey type.
@@ -42,7 +42,19 @@ For more information on _Secchi_ and _Temperature_ data see the [`delta-secchi-t
 
 `Delta smelt data functions.R` is broken up into sections. Each section reads in a particular type of data, summarizes into year-month-strata means, and ends with a function to return processed data for IBMR.
 
+The following functions are called on within the Delta Smelt Life Cycle Model: 
 
+1. `make.OMR(first)`, `make.WQ(first)` - Create tables of physical conditions OMR, Temp, and Secchi
+2. `smlt.dist(t,yr)` - Calculate DS distribution based on observed distributions
+3. `make.food(t,yr)` - Get food variables to make prey density estimates
+4. `make.temp(t,yr)` - Create hybrid temp dataset from DSM2 temps and fish survey data
+5. `egg2larv(TempCv)` - Calculate egg to larvae survival based on Bennett 2005
 
+`t` = month index(1:12)
 
+`yr` = year index(1=1980; 16=1995)
+
+`first` = first year index for simulation (usually, first=16)
+
+`TempCv = n.strata-length` vector of monthly mean temperature
 
