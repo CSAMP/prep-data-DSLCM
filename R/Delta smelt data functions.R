@@ -23,10 +23,11 @@ require(ProgGUIinR)
 require(chron)
 
 #################################################################
-# TODO Figure out what yearz is (will not run without)
-# TODO figure out what n.prey is also needed to run script 
+ yearz <- c(1980:2014)
+ n.prey <- 12
+ first <- 16
+ n.strata <- 12
  
-
 # 1. Create tables of physical conditions OMR, Temp, and Secchi
 # make.OMR function returns an n.year x n.month matrix of mean OMR
 # make.WQ function returns n.year x n.month x n.strata matrices of mean observed Temp and Secchi 
@@ -405,3 +406,4 @@ Se=invlogit(-2.35+0.45*TempCv-0.016*TempCv^2) # proportion hatching
 
 Se*exp(-0.035*LrvDays)
 }
+
