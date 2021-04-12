@@ -1,6 +1,6 @@
 # Data Prep for A Delta Smelt Individual-Based Life Cycle Model
 
-This repository contains the raw data and code to prep data for use in the Delta Smelt Life Cycle Model. Text is by Will Smith. 
+This repository contains the raw data and code to prep data for use in the Delta Smelt Life Cycle Model. Text is by [Will Smith.](mailto:william_e_smith@fws.gov) 
 
 ## Data Overview
 Five physical and biological variables, representing observed Delta conditions during 1995-2014, drive simulated population dynamics: prey density, Old and Middle River flow, delta smelt distribution, water temperature, and Secchi depth. All variables except Old and Middle River flow had dimensions year _y_, month _m_, and spatial strata _s_. Old and Middle River flow was a _y_ x _m_ matrix, and prey densities included a fourth dimension _p_ indexing prey type.
