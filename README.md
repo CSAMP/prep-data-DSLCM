@@ -5,6 +5,23 @@ This repository contains the raw data and code to prep data for use in the Delta
 ## Data Overview
 Five physical and biological variables, representing observed Delta conditions during 1995-2014, drive simulated population dynamics: prey density, Old and Middle River flow, delta smelt distribution, water temperature, and Secchi depth. All variables except Old and Middle River flow had dimensions year _y_, month _m_, and spatial strata _s_. Old and Middle River flow was a _y_ x _m_ matrix, and prey densities included a fourth dimension _p_ indexing prey type.
 
+**The Spatial Strata are ordered as follows:**
+
+| Strata Number | Region |
+| --- | --- |
+| 1 | Sacramento R. |
+| 2 | South Delta |
+| 3 | East Delta |
+| 4 | Lower Sacramento R. |
+| 5 | Lower San Joaquin R. |
+| 6 | Confluence |
+| 7 | SE Suisun |
+| 8 | NE Suisun |
+| 9 | Suisun Marsh |
+| 10 | SW Suisun |
+| 11 | NWE Suisun |
+| 12 | Yolo Bypass |
+
 ## Data Files
 Filenames for datasets with raw data are listed below. Each dataset, except fish distribution and data are saved at the daily time scale; however the IBMR requires monthly-scaled data. Each dataset must, therefore, be summarized into the spatiotemporal dimensions of the IBMR, using a set of data summary functions that are included with the model code.
 
